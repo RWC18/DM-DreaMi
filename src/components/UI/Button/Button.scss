@@ -1,0 +1,30 @@
+.btn{
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 54px;
+  padding: 14px 70px;
+  margin-right: 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 1s;
+  &.fill{
+    background-color: #00D11C;
+    color: #000027;
+    border: 2px solid #00D11C;
+    &:hover{
+      background-color: #000027;
+      color: #00D11C;
+    }
+  }
+  &.not-fill{
+    background-color: #000027;
+    color: #00D11C;
+    border: 2px solid #00D11C;
+    box-sizing: border-box;
+    &:hover{
+      background-color: #00D11C;
+      color: #000027;
+    }
+  }
+}
+
