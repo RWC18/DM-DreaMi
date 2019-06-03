@@ -1,9 +1,20 @@
 import React from 'react';
-import "./Button.scss";
+import {Link} from 'react-scroll';
 
 const Button = (props) => {
     return(
-        <a href={props.href} className={`btn ${props.class}`}>{props.title}</a>
+        <li>
+            <Link
+                  activeClass={props.activeClassName}
+                  to={props.target}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                  isDynamic={true}
+            >
+                {props.title}
+            </Link>
+        </li>
     )
 };
 

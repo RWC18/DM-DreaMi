@@ -1,64 +1,54 @@
-*{
-  padding: 0;
-  border: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-body{
-  background-color: #c4e3ff;
+header{
+  background: #020029 url("../../img/Group 111.svg") no-repeat left;
+  text-align: center;
+  margin-top: 70px;
+  padding: 80px 0 80px;
+  h3{
+    font-size: 46px;
+    color: lime;
+    padding: 0;
+    margin: 0;
+    animation: blurTxt 2s ease 0s infinite;
+    -webkit-animation: blurTxt 2s ease 0s infinite;
+    -moz-animation: blurTxt 2s ease 0s infinite;
+  }
+  p{
+    font-size: 18px;
+    color: white;
+    max-width: 20%;
+    line-height: 28px;
+    margin: 30px auto;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+      list-style-type: none;
+      margin: 10px;
+      a{
+        color: lime;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: 1s;
+        cursor: pointer;
+        border: 1px solid lime;
+        font-weight: bold;
+        &:hover{
+          background-color: lime;
+          color: #020029;
+        }
+      }
+    }
+  }
 }
 
-.Header{
-  width: 100%;
-  padding: 30px 200px;
-  .background{
-    position: absolute;
-    z-index: -500;
-    top: -37px;
-    left: -1%;
-    width: 101%;
+
+@keyframes blurTxt {
+  0% {
+    text-shadow:0 0 0 lime ;
   }
-  h1{
-    color: #00D11C;
-    margin-top: 15px;
-    font-size: 55px;
-    margin-bottom: 15px;
-    width: 30%;
-    font-weight: bold;
-  }
-  h1 ~ p{
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: white;
-    height: 215px;
-    width: 30%;
-    overflow: hidden;
-  }
-  .navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo_section{
-      text-align: center;
-      width: 30%;
-    }
-    .navBar_section{
-      width: 60%;
-    }
-  }
-  @media (max-width: 1400px) {
-    background-size: 110%;
-    padding: 30px 100px 220px;
-    img{
-      width: 40%;
-    }
-    h1{
-      font-size: 30px;
-    }
-    h1~p{
-      font-size: 15px;
-      height: 100px;
-    }
+  100% {
+    text-shadow: 0 0 100px lime ;
   }
 }
