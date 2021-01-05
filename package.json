@@ -5,7 +5,7 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "install": "^0.12.2",
     "mailgun-js": "^0.22.0",
     "node-sass": "^4.12.0",
